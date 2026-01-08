@@ -7,7 +7,7 @@ struct no{
 	struct no* prox;
 };
 
-/// declarando funÁıes ///
+/// declarando fun√ß√µes ///
 
 void criarLista(struct no** list);
 void inserirInicio(struct no** list, int element);
@@ -19,7 +19,7 @@ void removerFim(struct no** list);
 void limparLista(struct no** list);
 void mostrarLista(struct no* list);
 
-/// funÁ„o main ///
+/// fun√ß√£o main ///
 
 int main(){
 	struct no* lista;
@@ -46,7 +46,7 @@ int main(){
 	return 0;
 }
 
-/// inicializando funÁıes ///
+/// inicializando fun√ß√µes ///
 
 void criarLista(struct no** list){
 	*list = 0;
@@ -61,7 +61,7 @@ void inserirInicio(struct no** list, int element){
 		
 		*list = novo;	
 	}else{
-		printf("AlocaÁ„o din‚mica de memÛria mal sucedida!\n");
+		printf("Aloca√ß√£o din√¢mica de mem√≥ria mal sucedida!\n");
 	}
 }
 
@@ -85,7 +85,7 @@ void inserirMeio(struct no** list, int element){
 			aux2->prox = novo;
 		}
 	}else{
-		printf("AlocaÁ„o din‚mica de memÛria mal sucedida!\n");
+		printf("Aloca√ß√£o din√¢mica de mem√≥ria mal sucedida!\n");
 	}	
 }
 
@@ -105,7 +105,7 @@ void inserirFim(struct no** list, int element){
 			
 			aux->prox = novo;	
 		}else{
-			printf("AlocaÁ„o din‚mica de memÛria mal sucedida!\n");
+			printf("Aloca√ß√£o din√¢mica de mem√≥ria mal sucedida!\n");
 		}
 	}
 }
@@ -117,7 +117,7 @@ void removerInicio(struct no** list){
 		*list = (*list)->prox;
 		free(aux);
 	}else{
-		printf("N„o È possÌvel remover elementos de uma lista vazia!\n");
+		printf("N√£o √© poss√≠vel remover elementos de uma lista vazia!\n");
 	}
 }
 
@@ -137,7 +137,7 @@ void removerMeio(struct no** list, int element){
 			free(remov);
 		}
 	}else{
-		printf("N„o È possÌvel remover elementos de uma lista vazia!\n");
+		printf("N√£o √© poss√≠vel remover elementos de uma lista vazia!\n");
 	}
 }
 
@@ -157,7 +157,7 @@ void removerFim(struct no** list){
 			free(remov);
 		}
 	}else{
-		printf("N„o È possÌvel remover elementos de uma lista vazia!\n");
+		printf("N√£o √© poss√≠vel remover elementos de uma lista vazia!\n");
 	}
 }
 
@@ -170,7 +170,7 @@ void limparLista(struct no** list){
 			free(aux);
 		}
 	}else{
-		printf("A lista j· est· limpa!\n");
+		printf("A lista j√° est√° limpa!\n");
 	}
 }
 
@@ -185,6 +185,6 @@ void mostrarLista(struct no* list){
 		
 		printf("\n");
 	}else{
-		printf("N„o È possÌvel exibir elementos de uma lista vazia!\n");
+		printf("N√£o √© poss√≠vel exibir elementos de uma lista vazia!\n");
 	}
 }
