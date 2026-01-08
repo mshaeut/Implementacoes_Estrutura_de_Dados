@@ -12,7 +12,7 @@ struct no {
 	struct no* right;
 };
 
-// declaração das funções
+// declaraÃ§Ã£o das funÃ§Ãµes
 
 void gerarArvore(struct no **tree);
 
@@ -38,7 +38,7 @@ int main(){
 	
 }
 
-// implementação das funções
+// implementaÃ§Ã£o das funÃ§Ãµes
 
 void gerarArvore(struct no **tree){
 	*tree = 0;
@@ -57,7 +57,7 @@ struct no* criarArvore(int valor, struct no* fleft, struct no* fright){
 		
 	}else{
 		
-		printf("Alocação dinâmica falhou!\n");
+		printf("AlocaÃ§Ã£o dinÃ¢mica falhou!\n");
 		return 0;
 		
 	}
