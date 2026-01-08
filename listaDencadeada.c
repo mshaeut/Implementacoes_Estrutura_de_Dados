@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// funções e estruturas
+// funÃ§Å‘es e estruturas
 
 struct no{
 	struct no* ant;
@@ -72,7 +72,7 @@ int main(){
 	return 0;
 }
 
-// implementando funções
+// implementando funÃ§Å‘es
 
 void criarLista(struct lista* list){
 	list->init = 0;
@@ -95,7 +95,7 @@ void inserirInicio(struct lista* list, int element){
 			list->init = novo;
 		}
 	}else{
-		printf("Alocação dinâmica falhou!\n");
+		printf("AlocaÃ§Äƒo dinÃ¢mica falhou!\n");
 	}
 }
 
@@ -127,7 +127,7 @@ void inserirMeio(struct lista* list, int element){
 			inserirInicio(list, element);
 		}
 	}else{
-		printf("Alocação dinâmica falhou!\n");
+		printf("AlocaÃ§Äƒo dinÃ¢mica falhou!\n");
 	}
 }
 
@@ -147,7 +147,7 @@ void inserirFim(struct lista* list, int element){
 			list->fim = novo;
 		}
 	}else{
-		printf("Alocação dinâmica falhou!\n");
+		printf("AlocaÃ§Äƒo dinÃ¢mica falhou!\n");
 	}
 }
 
@@ -165,7 +165,7 @@ void removerInicio(struct lista* list){
 			free(aux);
 		}
 	}else{
-		printf("Não é possível remover elementos de uma lista vazia!\n");
+		printf("NÄƒo Ã© possÃ­vel remover elementos de uma lista vazia!\n");
 	}	
 }
 
@@ -191,7 +191,7 @@ void removerMeio(struct lista* list, int element){
 		}
 		free(aux);
 	}else{
-		printf("Não é possível remover elementos de uma lista vazia!\n");
+		printf("NÄƒo Ã© possÃ­vel remover elementos de uma lista vazia!\n");
 	}
 }
 
@@ -209,7 +209,7 @@ void removerFim(struct lista* list){
 			free(aux);
 		}
 	}else{
-		printf("Não é possível remover elementos de uma lista vazia!\n");
+		printf("NÄƒo Ã© possÃ­vel remover elementos de uma lista vazia!\n");
 	}	
 }
 
@@ -221,7 +221,7 @@ void limparLista(struct lista* list){
 			removerInicio(list);
 		}
 	}else{
-		printf("A lista já está vazia!\n");
+		printf("A lista jÃ¡ estÃ¡ vazia!\n");
 	}
 }
 
@@ -237,7 +237,7 @@ void exibirLista(struct lista list){
 		
 		printf("\n");
 	}else{
-		printf("Não é possível exibir os elementos de uma lista vazia!\n");
+		printf("NÄƒo Ã© possÃ­vel exibir os elementos de uma lista vazia!\n");
 	}
 }
 
