@@ -7,7 +7,7 @@ struct no{
 	struct no* prox;
 };
 
-/// declarando funÁıes ///
+/// declarando fun√ß√µes ///
 
 void criarPilha(struct no** p);
 void push(struct no** p, int element);
@@ -15,7 +15,7 @@ void pop(struct no** p);
 void limparPilha(struct no** p);
 void mostrarPilha(struct no* p);
 
-/// funÁ„o main ///
+/// fun√ß√£o main ///
 
 int main(){
 	struct no* pilha;
@@ -46,7 +46,7 @@ int main(){
 	return 0;
 }
 
-/// inicializando funÁıes ///
+/// inicializando fun√ß√µes ///
 
 void criarPilha(struct no** p){
 	*p = 0;
@@ -61,7 +61,7 @@ void push(struct no** p, int element){
 		
 		*p = topo;
 	}else{
-		printf("AlocaÁ„o din‚mica de memÛria falhou!\n");
+		printf("Aloca√ß√£o din√¢mica de mem√≥ria falhou!\n");
 	}
 }
 
@@ -72,7 +72,7 @@ void pop(struct no** p){
 		*p = (*p)->prox;
 		free(aux);
 	}else{
-		printf("N„o È possÌvel remover elementos de uma pilha vazia!\n");
+		printf("N√£o √© poss√≠vel remover elementos de uma pilha vazia!\n");
 	}
 }
 
@@ -85,7 +85,7 @@ void limparPilha(struct no** p){
 		free(*p);
 		*p = 0;
 	}else{
-		printf("A lista j· est· vazia!\n");
+		printf("A lista j√° est√° vazia!\n");
 		return;
 	}
 }
@@ -100,6 +100,6 @@ void mostrarPilha(struct no* p){
 		}
 		return;
 	}else{
-		printf("N„o È possÌvel exibir elementos de uma lista vazia!\n");
+		printf("N√£o √© poss√≠vel exibir elementos de uma lista vazia!\n");
 	}
 }
